@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt" id="meu-codigo">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/fav-icon.png" type="image/x-icon">
+    <title>HCA | CADASTRO</title>
+    <!-- ICONS DO GOOGLE ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="estilo.css">
+</head>
+
+<body>
+    <main class="main" id="main">
+
+        <div class="bg-formulario">
+            <div class="o-formulario">
+                <form class="form" id="form">
+
+                    <div class="pre-titulo">
+                        <span class="theme-mod" id="theme-mod" onclick="changeMod()"></span>
+                    </div>
+
+                    <div class="form-titulo">
+                        <h2>CADASTRO</h2>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="user_name" class="inputs" id="user_name" required autocomplete="off">
+                        <label for="user_name">Nome Completo</label>
+                    </div>
+
+                    <div class="input-box-date">
+                        <label for="user_data">Data de Nascimento</label>
+                        <input type="date" name="user_data" class="inputs-date" id="user_data" required
+                            autocomplete="off">
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="distrido_nasc" class="inputs" id="distrido_nasc" required
+                            autocomplete="off">
+                        <label for="distrido_nasc">Distrito de Nascimento</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="provincia_nasc" class="inputs" id="provincia_nasc" required
+                            autocomplete="off">
+                        <label for="provincia_nasc">Proívincia de Nascimento</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="text" name="user_email" class="inputs" id="user_email" required autocomplete="off">
+                        <label for="user_email">Endereço de Email</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="user_password" class="inputs" id="user_password" required
+                            autocomplete="off">
+                        <label for="user_password">Senha</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="password" name="conf_password" class="inputs" id="conf_password" required>
+                        <label for="conf_password">Confirmar Senha</label>
+                    </div>
+
+                    <div class="input-box">
+                        <input type="submit" name="enviar_btn" class="enviar_btn" id="enviar_btn" value="ENVIAR">
+                    </div>
+
+                    <div class="ja-tenho-conta">
+                        <p>Já tenho conta! <a href="entrar.html">Entrar</a></p>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+
+    </main>
+
+    <script src="javascript.js"></script>
+    
+</body>
+
+</html>

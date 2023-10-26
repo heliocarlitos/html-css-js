@@ -1,0 +1,466 @@
+/* INPORTANDO FOTES DO GOOGLE FONTES */
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+/* CORES USADAS NO TEMA DARK */
+:root{
+    --sempre-preta: #000;
+    --sempre-azul: #0092ed;
+    --sempre-branca: #fff;
+
+    --fundo-do-site: #000000;
+    --fundo-gradiente:linear-gradient(to right, #012941, #015990);
+    --fundo-do-form: #1c1c1c;
+    --fundo-das-bolinhas-a: #0092ed5d;
+    --fundo-das-bolinhas-b: #00eda25d;
+    --fundo-do-btn-conf: #000000;
+    --fundo-da-noffic: #000000c7;
+
+    --cor-dark-a: #fff;
+    --cor-dark-b: #767474;
+    --cor-de-erro: #ff0000;
+    --cor-de-notific: #ffff00;
+
+    --cor-dos-links:#262626;
+
+    --texto-dark: #fff;
+
+    --borda-dark-a: #0092ed;
+    --borda-dark-b: #013b5f;
+
+}
+/* CORES USADAS NO TEMA LIGTH */
+[data-theme="dark"]:root{
+    --sempre-preta: #000;
+    --sempre-azul: #0092ed;
+    --sempre-branca: #fff;
+
+    --fundo-do-site: ;
+    --fundo-do-form: #d3d3d3;
+    --fundo-das-bolinhas-a: #00eda25d;
+    --fundo-das-bolinhas-b: #0092ed5d;
+    --fundo-do-btn-conf: #fff;
+
+    --cor-dark-a: #000;
+    --cor-dark-b: #767474;
+    --cor-de-notific: #ff7300;
+
+    --texto-dark: #fff;
+
+    --borda-dark-a: #013b5f;
+    --borda-dark-b: #0092ed;
+
+    --sombra-do-formulario: #0000005e;
+
+}
+body{
+    color: var(--texto-dark);
+    font-family: 'Almarai', sans-serif; /* FONTE INPORTADA DO GOOGLE FONTES*/ 
+}
+.bg-formulario{
+    background: var(--fundo-do-site);
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.o-formulario{
+    margin: 20px;
+}
+.card-notific{
+    position: absolute;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 10;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--fundo-da-noffic);
+    top: 0;
+    left: 0;
+    cursor: not-allowed;
+}
+.card-notific .notific{
+    width: 250px;
+    cursor: default;
+    background-color: var(--fundo-do-form);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-dark);
+    transition: all .2s ease;
+    animation: ani-top .7s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px var(--sombra-do-formulario);
+}
+
+/* ESSA PARTE COMENTADA ADICIONA UMAS BOLINHAS NO CARD DE 
+NOTIFICAÇÃO QUE APARECE QUANDO VOCÊ CLICA EM ENVIAR O CÓDIGO 
+DE VERIFICAÇÃO. VOCÊ PODE ADICIONAR SE QUISER, MAS EU QUIS OCULTAR */
+
+/* .card-notific .notific::after{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--fundo-das-bolinhas-a);
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    margin: -40px 0 0 -35px;
+    z-index: 0;
+}
+.card-notific .notific::before{
+    content: '';
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    background-color: var(--fundo-das-bolinhas-b);
+    border-radius: 50px;
+    right: -40px;
+    z-index: 0;
+    bottom: -50px;
+} */
+.card-notific .notific .card-tt h3{
+    text-align: center;
+    color: var(--cor-dark-a);
+}
+.card-notific .notific .card-text{
+    color: var(--cor-dark-a);
+    margin: 10px 0 10px 0;
+    text-align: center;
+    font-size: .9em;
+}
+.card-notific .notific .card-btn{
+    display: flex;
+    justify-content: center;
+}
+.card-notific .notific .card-btn button{
+    padding: 4px 15px;
+    text-align: center;
+    border: 0;
+    outline: 0;
+    background-color: var(--borda-dark-b);
+    color: var(--sempre-branca);
+    border-radius: 4px;
+    transition: .3s;
+    cursor: pointer;
+
+    &:hover{
+        background-color: var(--borda-dark-a);
+    }
+}
+.form{
+    width: 360px;
+    background-color: var(--fundo-do-form);
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid var(--cor-dark);
+    transition: all .2s ease;
+    border: 1px solid transparent;
+    animation: ani-top 1.5s ease;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 10px 10px 15px var(--sombra-do-formulario);
+
+    &:hover{
+        border: 1px solid var(--cor-dark-a);
+    }
+}
+.form::after{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--fundo-das-bolinhas-a);
+    border-radius: 50px;
+    left: 0;
+    top:0;
+    margin: -40px 0 0 -35px;
+}
+.form::before{
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    background-color: var(--fundo-das-bolinhas-b);
+    border-radius: 50px;
+    right: -40px;
+    bottom: -50px;
+}
+
+.form .pre-titulo .theme-mod{
+    color: var(--cor-dark-a);
+    font-size: 1.2em;
+    margin-left: 280px;
+    cursor: pointer;
+}
+.form-titulo{
+    cursor: default;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0;
+}
+.form-titulo h2,
+.form-titulo h3{
+    color: var(--sempre-azul);
+    letter-spacing: 1px;
+}
+.form .ci-text{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.form .ci-text p{
+    color: var(--cor-dark-a);
+    font-size: .8em;
+    letter-spacing: .5px;
+}
+.form .code-box{
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+}
+.form .code-box .input-cod{
+    width: 33px;
+    height: 30px;
+    padding: 10px;
+    font-size: 1.1em;
+    border: none;
+    outline: 0;
+    background-color: var(--fundo-do-btn-conf);
+    border: 2px solid var(--borda-dark-b);
+    color: var(--cor-dark-a);
+    border-radius: 3px;
+    margin: 3px;
+
+    &:focus{
+        border: 2px solid var(--borda-dark-a);
+    }
+}
+.form-titulo img{
+    width: 50px;
+    height: 20px;
+    margin-top: 9px;
+}
+.form .l-g{
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.form .seccao-google{
+    display: flex;
+    align-items: center;
+    background-color:  var(--sempre-azul);
+    border: 1px solid var(--sempre-branca);
+    text-decoration: none;
+    color: var(--sempre-branca);
+    font-size: 1em;
+
+    &:hover{
+        opacity: 70%;
+    }
+}
+.form .seccao-google img{
+    width: 27px;
+    background-color: var(--sempre-branca);
+    margin-left: 1px;
+}
+.form .seccao-google figcaption{
+    padding: 5px;
+}
+.seccao-ou{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+.seccao-ou span{
+    color: var(--cor-dark-a);
+    position: relative;
+}
+.seccao-ou span::after{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: var(--cor-dark-a);
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.seccao-ou span::before{
+    content: '';
+    position: absolute;
+    width: 60px;
+    height: 1px;
+    background-color: var(--cor-dark-a);
+    margin-top: 10px;
+    margin-left: -65px;
+}
+.form .input-box{
+    margin: 20px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+}
+.form .input-box .inputs{
+    width: 100%;
+    height: 30px;
+    padding: 5px;
+    outline: 0;
+    border: 0;
+    background-color: transparent;
+    color: var(--cor-dark-a);
+    font-size: .8em;
+    border-bottom: 1px solid var(--cor-dark-a);
+
+    &:focus{
+        border-bottom: 1px solid var(--borda-dark-a);
+    }
+
+    &:focus ~ label, &:valid ~ label{
+        top: -11px;
+        font-size: .7em;
+        color: var(--borda-dark-a);
+    }
+}
+.form .input-box-date{
+    position: relative;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.form .input-box-date label{
+    font-size: .9em;
+    cursor: pointer;
+    color: var(--cor-dark-a);
+}
+.form .input-box-date .inputs-date{
+    padding: 8px;
+    border: none;
+    outline: 0;
+    border-radius: 4px;
+    background-color: var(--cor-dark-b);
+    cursor: pointer;
+    color: var(--sempre-branca);
+
+    &:focus{
+        background-color: var(--sempre-azul);
+    }
+}
+.form .input-box label{
+    font-size: .9em;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    pointer-events: none;
+    color: var(--cor-dark-a);
+    transition:  .3s;
+}
+.form .guardar-seccao{
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    font-size: .8em;
+    color: var(--cor-dark-a);
+}
+.form .guardar-seccao label{
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.form .guardar-seccao input{
+    cursor: pointer;
+    margin: 0 5px;
+}
+.form .guardar-seccao a{
+    text-decoration: none;
+    color: var(--cor-dark-a);
+    margin: 0 5px;
+    font-weight: 600;
+
+    &:hover{
+        color: var(--sempre-azul);
+    }
+}
+.form .input-box .enviar_btn{
+    width: 100%;
+    border: 0;
+    outline: 0;
+    font-size: .9em;
+    height: 30px;
+    border-radius: 4px;
+    background-color: var(--borda-dark-b);
+    color: var(--sempre-branca);
+    transition: .2s;
+    cursor: pointer;
+
+    &:hover, &:focus{
+        background-color: var(--borda-dark-a);
+    }
+}
+.form .input-box .a_submit{
+    width: 100%;
+    font-size: .8em;
+    padding: 10px;
+    border-radius: 4px;
+    background-color: var(--borda-dark-b);
+    color: var(--sempre-branca);
+    transition: .2s;
+    text-decoration: none;
+
+    &:hover, &:focus{
+        background-color: var(--borda-dark-a);
+    }
+}
+.ja-tenho-conta{
+    display: flex;
+    justify-content: center;
+    color: var(--cor-dark-a);
+    font-size: .9em;
+}
+.form .ja-tenho-conta a{
+    text-decoration: none;
+    color: var(--cor-dark-a);
+    margin: 0 5px;
+
+    &:hover{
+        color: var(--sempre-azul);
+    }
+}
+.form .notific-login{
+    justify-content: center;
+    margin-left: 70px;
+}
+.form .notific-login #usi{
+    display: none;
+    color: var(--cor-de-erro);
+    margin-top: 10px;
+}
+.form .notific-login #ptc{
+    color: var(--cor-de-notific);
+    display: none;
+    margin-top: 10px;
+    margin-left: 10px;
+}
+/* ANIMAÇÃO QUE FAZ OS FPRMULÁRIO/CARD SUBIREM PARA CIMA QUANDO
+A PAGIVA CARREGA OU É ACTUALIZADA */
+@keyframes ani-top {
+    0%{
+        margin-top: 100px;
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
