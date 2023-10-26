@@ -1,1 +1,4 @@
-Antes de tudo, gostaria de informar que este aplicativo está atualmente em sua fase beta, também conhecida como Produto Mínimo Viável (PMV). Este é um pequeno projeto que foi desenvolvido a pedido do meu amigo Kadir como parte de um trabalho escolar. Após a conclusão do projeto e sua apresentação, pretendo disponibilizá-lo neste perfil. No entanto, é importante observar que não disponibilizarei o código-fonte, mas sim o aplicativo em si, para que você possa experimentar como ele funciona.
+Antes de tudo, gostaria de informar que este aplicativo está atualmente em sua fase beta, também conhecida como Produto Mínimo Viável (PMV).
+Este é um pequeno projeto que foi desenvolvido a pedido do meu amigo Kadir como parte de um trabalho escolar. Após a conclusão do projeto e 
+sua apresentação, pretendo disponibilizá-lo neste perfil. No entanto, é importante observar que não disponibilizarei o código-fonte, mas sim
+o aplicativo em si, para que você possa experimentar como ele funciona.
