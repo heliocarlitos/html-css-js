@@ -1,0 +1,29 @@
+Para começar, siga estas etapas para configurar o ambiente:
+
+1. Após baixar e extrair o arquivo, acesse o site do XAMPP em https://www.apachefriends.org/download.html e faça o download do XAMPP.
+
+2. Durante a instalação do XAMPP, assegure-se de selecionar a opção para instalar todos os componentes necessários.
+
+3. Após a conclusão da instalação, abra o XAMPP e inicie os serviços Apache e MySQL clicando em "Start".
+
+4. Em seguida, pegue a pasta "CFP" que você extraiu e cole-a dentro da pasta 'htdocs'. Você pode encontrar a pasta 'htdocs' em 'C:\xampp\htdocs'.
+
+Agora, é hora de configurar o banco de dados:
+
+5. Abra o seu navegador e acesse a seguinte URL: http://localhost/dashboard/ (não é necessário ter conexão com a internet).
+
+6. Na página que se abre, clique em "phpMyAdmin" no menu.
+
+7. No painel do phpMyAdmin, crie um novo banco de dados com o nome 'bd_controle_financeiro_pessoal'.
+
+8. Dentro deste banco de dados, crie uma tabela chamada 'tabela_de_itens' com os campos 'id', 'produto' e 'preço'. Certifique-se de que todas as letras sejam minúsculas e sem acentos ou cedilha.
+
+9. No campo 'id', defina a opção 'AUTO_INCREMENT'. Isso garantirá que um ID diferente seja criado para cada item na tabela.
+
+Agora, antes de acessar a tela inicial do aplicativo, verifique se os serviços Apache e MySQL estão em execução (indicados por luzes verdes). Se estiverem, siga as etapas a seguir:
+
+10. Abra seu navegador e digite o seguinte endereço: http://localhost/cfp/cfp.php. Isso abrirá a tela de login.
+
+11. As senhas atualmente estão em branco. Basta clicar no botão "Entrar". Você pode definir posteriormente um nome de usuário e senha no código JavaScript; as instruções estão disponíveis lá.
+
+Agora você está pronto para começar a usar o aplicativo de controle financeiro pessoal. Certifique-se de manter os serviços Apache e MySQL em execução sempre que desejar usar o aplicativo.
