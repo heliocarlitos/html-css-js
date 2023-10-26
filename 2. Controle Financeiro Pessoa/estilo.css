@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@300;400;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root {
+    --sempre-branca: #fff;
+    --sempre-preta: #000;
+    --sempre-azul: #0000ff;
+
+    --fundo-do-site: #f5f3f3;
+    --fundo-do-conteudo-do-container: #fff;
+    --fundo-do-btn-entrar: #444444;
+    --fundo-tb-header: #838383;
+    --fundo-bd-tb: #ececec;
+
+    --cor-do-texto-da-tb: #000000;
+
+    --cor-de-sucesso: #1cff68;
+    --cor-de-erro: #ff1c1c;
+    --cor-de-notificacao: #f7ff1c;
+
+    --cor-branca: #fff;
+    --cor-das-sombras: #00000041;
+    --cor-das-bordas-do-input: #6c6c6c;
+    --cor-dos-links-do-seccao: #6c6c6c;
+
+    --transparent: transparent;
+    --sem-cor: #00000000;
+    --cor-de-fundo-do-btn-actico: #e8e8e8;
+
+    --dark-a: #000;
+}
+body {
+    background-color: var(--fundo-do-site);
+    font-family: 'Almarai', sans-serif;
+}
+body a {
+    text-decoration: none;
+    color: var(--cor-dos-links-do-seccao);
+
+    &:hover {
+        color: var(--sempre-azul);
+    }
+    &:active {
+        color: var(--cor-de-erro);
+    }
+}
+.container {
+    font-size: .9em;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .conteudo-do-container {
+    background-color: var(--fundo-do-conteudo-do-container);
+    padding: 20px;
+    margin: 20px;
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    box-shadow: 0 0 10px var(--cor-das-sombras);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow-y: hidden;
+}
+.tela-de-login {
+    display: block;
+    justify-content: center;
+}
+.form .titulo {
+    margin: 0 0 10px 0;
+    display: flex;
+    justify-content: center;
+}
+.form .seccao-com-google {
+    border: 1px solid var(--sempre-azul);
+    background-color: var(--sempre-azul);
+    display: flex;
+    justify-content: space-evenly;
+    font-weight: 600;
+    align-items: center;
+    font-size: 1em;
+    margin-bottom: 10px;
+    color: var(--sempre-branca);
+
+    &:hover {
+        opacity: 73%;
+    }
+}
+.form .seccao-com-google img {
+    background-color: var(--sempre-branca);
+    width: 30px;
+    margin-left: -13px;
+    padding: 3px;
+}
+.form .ou {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px 0;
+}
+.form .ou p {
+    position: relative;
+}
+.form .ou p::after {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: var(--dark-a);
+    margin-left: 10px;
+    margin-top: 10px;
+}
+.form .ou p::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: var(--dark-a);
+    margin-left: -110px;
+    margin-top: 10px;
+}
+.form .seccao-com-google a::before {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-a);
+    width: 26px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: -30px;
+}
+.form .seccao-com-google a::after {
+    content: '';
+    position: absolute;
+    background-color: var(--dark-a);
+    width: 26px;
+    height: 1px;
+    margin-top: 10px;
+    margin-left: 5px;
+}
+.form .area-dos-inpts {
+    margin-bottom: 10px;
+}
+.form .area-dos-inpts label {
+    position: relative;
+}
+.form .area-dos-inpts label::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 1px;
+    background-color: var(--dark-a);
+    top: 12px;
+    margin-left: 2px;
+}
+.form .area-dos-inpts input {
+    width: 100%;
+    padding: 8px;
+    margin-top: 10px;
+    border: 1px solid var(--cor-das-bordas-do-input);
+    border-radius: 5px;
+    outline: 0;
+
+    &:focus {
+        border: 1px solid var(--sempre-azul);
+    }
+}
+.form .area-dos-inpts p {
+    font-size: .8em;
+    color: var(--sem-cor);
+}
+.form .manter-senha-esqueci-senha {
+    display: flex;
+    justify-content: space-between;
+    font-size: .9em;
+    margin-bottom: 20px;
+}
+.form .manter-senha-esqueci-senha label {
+    &:hover {
+        cursor: pointer;
+    }
+}
+.form .manter-senha-esqueci-senha a {
+    text-decoration: none;
+    color: var(--cor-dos-links-do-seccao);
+
+    &:hover {
+        color: var(--sempre-azul);
+    }
+    &:active {
+        color: var(--cor-de-erro);
+    }
+}
+.form .area-do-btn-entrar {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+.form .area-do-btn-entrar button {
+    width: 100%;
+    padding: 7px 0;
+    border: none;
+    outline-color: var(--cor-de-sucesso);
+    background-color: var(--fundo-do-btn-entrar);
+    color: var(--sempre-branca);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: var(--sempre-azul);
+    }
+}
+.form .area-do-btn-entrar .add {
+    width: 100%;
+    padding: 7px;
+    border: none;
+    outline: 0;
+    background-color: var(--fundo-do-btn-entrar);
+    color: var(--sempre-branca);
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all .2s ease;
+
+    &:hover {
+        background-color: var(--sempre-azul);
+    }
+}
+.form .nao-tenho-uma-conta {
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+}
+.form .nao-tenho-uma-conta p {
+    &:hover {
+        cursor: default;
+    }
+}
+.form .nao-tenho-uma-conta a {
+    text-decoration: none;
+    color: var(--cor-dos-links-do-seccao);
+
+    &:hover {
+        color: var(--sempre-azul);
+    }
+    &:active {
+        color: var(--cor-de-erro);
+    }
+}
+.form .nao-tenho-uma-conta a span {
+    margin-left: 4px;
+    font-size: 1.1em;
+}
+.form .mensagem-de-notidicacao {
+    display: flex;
+    justify-content: center;
+    margin-top: 13px;
+}
+.form .mensagem-de-notidicacao p {
+    font-size: .9em;
+    color: var(--cor-de-erro);
+}
+.form #mensagem-de-notidicacao {
+    display: none;
+}
+.adicionar_itens {
+    display: none;
+}
+.itens_adicionados {
+    display: none;
+}
+.itens_adicionados {
+    overflow-y: auto;
+}
+.adicionar-novo-item {
+    display: none;
+}
+.adicionar-novo-item .titulo {
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.btns-das-abas {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 10px;
+}
+.btns-das-abas button {
+    cursor: pointer;
+    padding: 10px;
+    border: 1px solid var(--cor-das-bordas-do-input);
+    border-radius: 3px;
+    background-color: var(--transparent);
+    transition: all .2s ease;
+    margin: 5px;
+
+    &:hover {
+        border: 1px solid var(--sempre-azul);
+        background-color: var(--sempre-azul);
+        color: var(--sempre-branca);
+    }
+}
+.btns-das-abas #btn-sair {
+    &:hover {
+        border: 1px solid var(--cor-de-erro);
+        background-color: var(--cor-de-erro);
+    }
+}
+.btns-das-abas #btn-act {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    padding: 8px;
+    border: 1px solid var(--cor-das-bordas-do-input);
+    font-size: .8em;
+    border-radius: 10px;
+    background-color: var(--transparent);
+    transition: all .2s ease;
+    margin: 5px;
+
+    &:hover {
+        border: 1px solid var(--cor-das-sombras);
+        background-color: var(--cor-das-sombras);
+        color: var(--sempre-branca);
+    }
+}
+.btns-das-abas .btn-activo {
+    border: 1px solid var(--cor-de-fundo-do-btn-actico);
+    background-color: var(--cor-de-fundo-do-btn-actico);
+
+    &:hover {
+        border: 1px solid var(--cor-de-fundo-do-btn-actico);
+        background-color: var(--cor-de-fundo-do-btn-actico);
+        color: var(--sempre-preta);
+        cursor: not-allowed;
+    }
+}
+.area-do-usuario {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 0px;
+    cursor: default;
+}
+.area-do-usuario .contenteudo-do-usuario {
+    margin: 5px;
+    font-size: .9em;
+}
+.area-do-usuario span {
+    color: var(--sempre-azul);
+}
+.area-do-usuario a {
+    letter-spacing: .5px;
+}
+.itens_adicionados .area-da-tabela {
+    height: 200px;
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 10px;
+}
+.tabela {
+    border-radius: 10px;
+    background-color: var(--fundo-tb-header);
+    width: 100%;
+    padding: 4px;
+}
+.tabela .cabecalho-da-tb {
+    background-color: var(--fundo-tb-header);
+    color: var(--sempre-branca);
+    height: 20px;
+}
+.tabela .bd-tb {
+    background-color: var(--fundo-bd-tb);
+    color: var(--cor-do-texto-da-tb);
+}
