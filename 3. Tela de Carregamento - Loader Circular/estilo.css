@@ -1,0 +1,77 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sempre-branca: #ffffff;
+    --sempre-preta: #000000;
+    --sempre-azul: #0092ed;
+
+    --cor-cinza-a: #d3d3d3;
+    --cor-azul-a: #b2dffa;
+
+    --fundo-dark: #1c1c1c;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--fundo-dark);
+}
+.seccao-de-loader{
+    background-color: var(--sempre-branca);
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    overflow: hidden;
+    z-index: 999999999999;
+}
+.seccao-de-loader .loader{
+    width: 50px;
+    height: 50px;
+    border: 5px solid #0000000e;
+    border-bottom: 5px solid var(--sempre-azul);
+    border-top: 5px solid var(--sempre-azul);
+    border-radius: 50px;
+    animation: girar .9s linear infinite;
+}
+.seccao-de-loader p{
+    margin-top: 20px;
+    font-size: .7em;
+    font-weight: 600;
+    font-style: italic;
+    color: var(--sempre-azul);
+    letter-spacing: .5px;
+}
+.seccao-de-loader p span{
+    animation: piscando .6s linear infinite;
+}
+@keyframes girar {
+    to {
+        transform: rotate(360deg);
+    }
+}
+@keyframes piscando {
+    0%{ opacity: 0;}
+}
+
+/* ESTILO DA DIV DA IMAGEM & ESTILIZAÇÃO DA PROPRIA IMAGEM */
+.seccaode-img{
+    z-index: -100;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    color: var(--sempre-branca);
+}
+.seccaode-img .img-box img{
+    margin: 20px;
+    width: 500px;
+    border-radius: 10px;
+}
