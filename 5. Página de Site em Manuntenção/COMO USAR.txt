@@ -1,0 +1,33 @@
+## COMO HABILITAR?
+
+NO ARQUIVO 'estilo.css' NA LINHA 24 (.seccao-de-manutencao) ENQUANTO ESTIVER COM 'display: flex;' A TELA DE SITE EM MANUTENÇÃO SERÁ EXIBIDA. PARA OCULTAR É SÓ MUDAR PRA 'display: none;' ELE SERÁ OCULTO.
+
+O DISPLAY FLEX (display: flex;) SE ENCONTRA NA LINHA 28 NO ARQUIVO (estilo.css)
+
+
+
+## COMO MUDAR OS VALORES DO CONTADOR?
+
+No arquivo 'javascript' a função `iniciarContagemRegressiva` é responsável por iniciar a contagem regressiva e aceita seis parâmetros que representam os valores em anos, meses, dias, horas, minutos e segundos. Você pode configurar esses valores passando-os diretamente na chamada dessa função na linha 40:
+
+iniciarContagemRegressiva(years, months, days, hours, minutes, seconds);
+
+- `years`: Este parâmetro representa o número de anos que você deseja adicionar à contagem regressiva. Por exemplo, se você deseja que a contagem seja de um ano, configure `years` para `1`.
+
+- `months`: Este parâmetro representa o número de meses que você deseja adicionar à contagem regressiva. Se desejar incluir 6 meses, configure `months` para `6`.
+
+- `days`: Aqui, você define o número de dias para a contagem regressiva. Por exemplo, para 30 dias, configure `days` para `30`.
+
+- `hours`: Este parâmetro permite definir o número de horas. Se você quiser incluir 12 horas na contagem regressiva, configure `hours` para `12`.
+
+- `minutes`: Você pode configurar o número de minutos usando este parâmetro. Se desejar incluir 30 minutos, configure `minutes` para `30`.
+
+- `seconds`: Este parâmetro representa o número de segundos que você deseja incluir na contagem regressiva. Se quiser 45 segundos, configure `seconds` para `45`.
+
+Você pode ajustar esses valores de acordo com as suas necessidades. Por exemplo, se você quiser criar uma contagem regressiva de 2 anos, 3 meses, 15 dias, 6 horas, 45 minutos e 30 segundos, basta configurar cada um dos parâmetros da função `iniciarContagemRegressiva` com os valores correspondentes:
+
+
+iniciarContagemRegressiva(2, 3, 15, 6, 45, 30);
+
+
+Dessa forma, a contagem regressiva será configurada de acordo com os valores que você especificar, e ela começará automaticamente assim que a página for carregada.

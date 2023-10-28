@@ -1,0 +1,171 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sempre-branca: #ffffff;
+    --sempre-preta: #000000;
+    --sempre-azul: #0092ed;
+    --sempre-laranja: #ff7b00;
+
+    --cor-cinza-a: #d3d3d3;
+    --cor-azul-a: #b2dffa;
+
+    --fundo-dark: #252525;
+    --fundo-btn-a: #0092ed;
+    --fundo-btn-b: #014d7d;
+
+    --texto-ligth-dark: #000000;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.seccao-de-manutencao{
+    cursor: not-allowed;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    /* display: none; */
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: var(--sempre-branca);
+}
+.seccao-de-manutencao .img-manutencao img{
+    width: 650px;
+    transition: .2s;
+}
+.seccao-de-manutencao .sm-info{
+    margin: 20px 0;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    color: var(--sempre-azul);
+    transition: .2s;
+    font-weight: 700;
+}
+.seccao-de-manutencao .timer{
+    font-size: 1.3em;
+    font-weight: 500;
+    transition: .2s;
+    color: var(--sempre-preta);
+}
+.seccao-de-manutencao .timer span{
+    color: var(--sempre-laranja);
+    font-weight: 600;
+}
+
+/* RESPONSIVIDADE: COMPORTAMENTOS DOS ITENS EM DIFERENTES TAMANHOS DE TELAS */
+@media screen and (max-width: 1024px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 790px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 16px 0;
+        font-size: 1.7em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: 1.5em;
+    }
+}
+@media screen and (max-width: 900px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 650px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 16px 0;
+        font-size: 1.4em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: 1.2em;
+    }
+}
+@media screen and (max-width: 645px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 450px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 16px 0;
+        font-size: 1.3em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: 1.1em;
+    }
+}
+@media screen and (max-width: 440px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 320px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 13px 0;
+        font-size: 1.1em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 315px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 230px;
+    }
+    .seccao-de-manutencao .sm-info{
+        font-size: .9em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: .8em;
+    }
+}
+@media screen and (max-width: 253px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 200px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 10px 0;
+        font-size: .8em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: .7em;
+    }
+}
+@media screen and (max-width: 207px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 150px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 7px 0;
+        font-size: .5em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: .4em;
+    }
+}
+@media screen and (max-width: 144px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 120px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 5px 0;
+        font-size: .4em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: .3em;
+    }
+}
+@media screen and (max-width: 119px){
+    .seccao-de-manutencao .img-manutencao img{
+        width: 100px;
+    }
+    .seccao-de-manutencao .sm-info{
+        margin: 4px 0;
+        font-size: .2em;
+    }
+    .seccao-de-manutencao .timer{
+        font-size: .1em;
+    }
+}
+@media screen and (max-width: 103px){
+    .seccao-de-manutencao{
+        display: none;
+    }
+}
