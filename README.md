@@ -28,7 +28,7 @@ Fique à vontade para usar, modificar e distribuir os projetos de acordo com os 
 ## Contribuições
 
 Se deseja contribuir para este projecto, por favor, siga estas diretrizes:
-
+ 
 - Faça um fork deste repositório.
 - Crie uma branch para sua contribuição: `git checkout -b minha-contribuicao`
 - Faça suas modificações e adições.
