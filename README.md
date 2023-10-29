@@ -1,5 +1,4 @@
-
-  # Licença MIT
+# Licença MIT
   
   Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
   
