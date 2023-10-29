@@ -6,7 +6,7 @@ Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS
 - **Meu Repositório do:** <a href="https://github.com/heliocarlitos/html-css-js/tree/main" target="_blank">GitHub</a>
 - **Meu Site:** <a href="https://heliocarlitosantonio.blogspot.com/" target="_blank">HCA</a>
 - **Meu Google Drive:** <a href="https://drive.google.com/drive/folders/1eyM2P5qieI9I8lEZI2i_IxYzP5VVEpBK?usp=drive_link" target="_blank">Meu Repositório</a>
-
+ 
 ## Termos de Uso e Licença dos Projetos
 
 Os projetos e os arquivos de documentação associados são disponibilizados com permissão concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia, sujeito às seguintes condições:
