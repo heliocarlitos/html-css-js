@@ -39,5 +39,5 @@ Se deseja contribuir para este projecto, por favor, siga estas diretrizes:
 Se você tiver alguma dúvida ou precisar entrar em contato conosco, sinta-se à vontade para fazê-lo através dos seguintes meios:
 - **Endereço de Email:** [heliocarlitosantonio@gmail.com](mailto:heliocarlitosantonio@gmail.com)
 - **Número de Whatsapp:** [+258 86 286 7990](https://wa.me/258862867990?text=Ol%C3%A1%20H%C3%A9lio%20Carlitos%2C%20o%20meu%20nome%20%C3%A9%20%5Bseu%20nome%20completo%5D%2C%20estou%20entrando%20em%20contacto%20porque%20estou%20interessado%20no%20seu%20projecto%20%5Bnome%20do%20projeto%5D%20e%20gostaria%20de%20obter%20mais%20informa%C3%A7%C3%B5es%20a%20respeito.%20%20%20Poderia%2C%20por%20favor%2C%20me%20fornecer%20detalhes%20sobre%20%5Binsira%20aqui%20as%20informa%C3%A7%C3%B5es%20espec%C3%ADficas%20que%20deseja%5D%3F%20%20%20Estou%20ansioso%20para%20saber%20mais%20e%20possivelmente%20contribuir%20para%20o%20projecto.%20Agrade%C3%A7o%20desde%20j%C3%A1%20pela%20sua%20aten%C3%A7%C3%A3o!) 
-
+ 
 Este projecto é licenciado sob os termos da [Licença MIT](LICENSE). Sinta-se à vontade para usar, modificar e distribuir este projecto de acordo com os termos da licença.
