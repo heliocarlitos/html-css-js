@@ -3,7 +3,7 @@
 Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
 
 ### Termos de Uso e Licença dos Projetos
-
+ 
 Os projetos e os arquivos de documentação associados são disponibilizados com permissão concedida, gratuitamente, a qualquer pessoa que obtenha uma cópia, sujeito às seguintes condições:
 
 1. **Uso, Cópia e Modificação:** Você tem permissão para usar, copiar e modificar os projetos de acordo com suas necessidades.
