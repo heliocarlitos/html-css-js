@@ -1,6 +1,6 @@
 # Licença MIT
 
-Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
+Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você. 
 
 ## Estes Projecto tambem estão disponíveis em: 
 - **Meu Repositório do:** <a href="https://github.com/heliocarlitos/html-css-js/tree/main" target="_blank">GitHub</a>
