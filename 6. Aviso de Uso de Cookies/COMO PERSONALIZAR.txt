@@ -1,0 +1,10 @@
+Não há cuita coisa que você possa personalizar, se não a mensagem de aviso de cookie, caso você queira adicionar ou remover alguma informação no aviso você pode editar o texto no arquivo 'index.html' na linha 26, é onde se encontra o texto da mensagem de cookies.
+
+No botão de 'Detalhes' você pode adicionar o link da sua págia de Política de Privacidade, ou mudar o texto de 'Detalhes' para 'Recusar' e adicionar o link da Google. Se o usuário recusar o uso de cookies no seu site ele será direcionado para a pagina do Google, ou seja, ele não poderá acessar aos conteúdos do seu site sem aceitar o uso de cookies.
+
+IMPORTANTE
+Você deve adicionar o seu cookie abaixo da tag <body>, ou seja, a div com a classe 'sseccao-de-cookies' deve ser o primeiro conteúdo do seu site e o JavaScript o último, o JavaScript deve estar acima da tag </body> e dentro da tag <script>.
+
+E não esqueça em remover a div com a classe 'seu-conteudo' na linha 36 e o seu estilo no arquivo 'estilo.css' na linha 32, pois ele so serve para avisar que você aceitou o uso de cookies.
+
+Se tiver dificuldades fale comigo, eu quero muito te ajudar a melhorar suas habilidade em desenvolvimento Web, não sei muito, mas vou te ajudar.
