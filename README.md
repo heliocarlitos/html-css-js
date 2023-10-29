@@ -1,10 +1,11 @@
 # Licença MIT
 
 Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
-## Estes Projecto tambem estão disponíveis em:
-- **Meu Repositório do:** [GitHub](https://github.com/heliocarlitos/html-css-js/tree/main)
-- **Meu Site:** [HCA](https://heliocarlitosantonio.blogspot.com/)
-- **Meu Google Drive:** [HCA](https://drive.google.com/drive/folders/1eyM2P5qieI9I8lEZI2i_IxYzP5VVEpBK?usp=drive_link)
+
+## Estes Projecto tambem estão disponíveis em: 
+- **Meu Repositório do:** <a href="https://github.com/heliocarlitos/html-css-js/tree/main" target="_blank">GitHub</a>
+- **Meu Site:** <a href="https://heliocarlitosantonio.blogspot.com/" target="_blank">HCA</a>
+- **Meu Google Drive:** <a href="https://drive.google.com/drive/folders/1eyM2P5qieI9I8lEZI2i_IxYzP5VVEpBK?usp=drive_link" target="_blank">Meu Repositório</a>
 
 ## Termos de Uso e Licença dos Projetos
 
