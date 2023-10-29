@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="pt" class="no-select">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Seu Site de Tecnologia Gratuita">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+    <title>Home</title>
+
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+    <div class="aviso-de-cookies" id="cookies-msg">
+        <div class="cookies">
+            <div class="cookie-img">
+                <img src="imagens/cookie-img.png" alt="Imagem de Aviso de Cookie">
+            </div>
+            <div class="cookies-content">
+
+                <div class="cookie-txt">
+                    Este site utiliza cookies para garantir a melhor 
+                    experiência possível ao utilizador. Ao continuar 
+                    a navegar neste site, você concorda com o uso de 
+                    cookies.
+                </div>
+                <div class="btn-aceitra-recusar-cookie">
+                    <button class="btn-aceitar" onclick="aceito()">Aceitar</button>
+                    <a class="btn-recusar-cookie" target="_blank" href="https://www.google.com/">Recusar</a>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+    <header class="header" id="header">
+        <div class="logotipo">
+            <a href="javascript:void(0)"><img src="imagens/logotipohca.png" alt="HCA - Logo"></a>
+        </div>
+
+        <div class="linhavertical"></div>
+    
+        <div class="link-do-menu">
+            <nav class="area-de-navegacao" id="area-de-navegacao">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#produtos">Produtos</a></li>
+                    <li><a href="#artigos">Artigos</a></li>
+                    <li><a href="#formas-de-pagamento">Pagamentos</a></li>
+                    <li><a href="#contacto">Contacto</a></li>
+                    <li><a href="javascript:void(0)">Páginas</a></li>
+                </ul>
+
+                <div class="botao-de-inscricao  btninscricao2">
+                    <a href="javascript:void(0)">Se inscrever</a>
+                </div>
+            </nav>
+        </div>
+
+        <div class="linhavertical"></div>
+
+        <div class="botao-de-inscricao btninscricao1">
+            <a href="javascript:void(0)">Se inscrever</a>
+        </div>
+        
+        <div class="mod" id="trocarmod">
+            <span><i class='bx bxs-sun' ></i></span>
+        </div>
+        <div class="local-do-icine-menu" onclick="abrir_fechar_menu()">
+            <span><i class='bx bx-menu'></i></span>
+        </div>
+    </header>
+
+    <!-- ========== CONTEÚDO DO SITE =========== -->
+    <main class="conteudo" id="main-content">
+
+        <!--  -->
+        <div class="capa">
+            <div class="img-decapa" >
+                <img src="imagens/capa.jpg" alt="Imagem de Capa">
+            </div>
+
+            <div class="inf-da-capa">
+                <h4>Um pequeno texto aqui</h4>
+                <h1>Um título aqui que como o titulo do site</h1>
+                <p>Uma breve descrição so seu site aqui, como se fosse um resumo do que o seu site trata.</p>
+                <a class="quespsaber" href="javascript:void(0)">Quero saber mais</a>
+
+                <div class="social-midia">
+                    <a href="javascript:void(0)" target="_blank" title="Instagram"><i class='bx bxl-instagram-alt'></i></a>
+                    <a href="javascript:void(0)" target="_blank" title="Facebook"><i class='bx bxl-facebook-square'></i></a>
+                    <a href="javascript:void(0)" target="_blank" title="Twitter"><i class='bx bxl-twitter'></i></a>
+                    <a href="javascript:void(0)" target="_blank" title="LinkedIn"><i class='bx bxl-linkedin-square'></i></a>
+                    <a href="javascript:void(0)" target="_blank" title="WhatsApp"><i class='bx bxl-whatsapp-square'></i></a>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  -->
+        <div id="produtos"></div>
+        <div class="conteudo-de-produtos" >
+            <div class="seccao-de-informacao">
+                <h2>Produtos</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Possimus ipsam molestias error, quae, quisquam earum perferendis 
+                    eveniet illo laborum nesciunt recusandae ut nulla incidunt consequatur 
+                    alias aperiam totam! Dolorum, saepe!</p>
+            </div>
+            <div class="produtos" >
+                
+                <a href="javascript:void(0)" class="criancas os-produtos">
+                    <img src="imagens/moda-para-criancas.png" alt="Moda para Crianças">
+                    <p>Para Crianças</p>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="mulheres os-produtos">
+                    <img src="imagens/moda-para-mulheres.png" alt="Moda para Mulheres">
+                    <p>Para Mulheres</p>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="homens os-produtos">
+                    <img src="imagens/moda-para-homens.png" alt="Moda para Homens">
+                    <p>Para Homens</p>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="idosos os-produtos">
+                    <img src="imagens/moda-para-idosos.png" alt="Moda para Idosos">
+                    <p>Para Idosos(as)</p>
+                </a>
+                
+            </div>
+        </div>
+
+        <!--  -->
+        <div id="artigos"></div>
+        <div class="as-ultimas-criacoes">
+            <div class="seccao-de-informacao">
+                <h2>Últimas Criações</h2>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. 
+                    Possimus ipsam molestias error, quae, quisquam earum perferendis 
+                    eveniet illo laborum nesciunt recusandae ut nulla incidunt consequatur 
+                    alias aperiam totam! Dolorum, saepe!</p>
+            </div>
+
+            <div class="as-criacoes">
+                <!--  -->
+                <a href="javascript:void(0)" class="criacoes">
+                    <img src="imagens/jeans-1.jpg" alt="Calças Jeans">
+                    <div class="preco">
+                        <p>349<sub>MT</sub></p>
+                    </div>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="criacoes">
+                    <img src="imagens/jeans-2.jpg" alt="Calças Jeans">
+                    <div class="preco">
+                        <p>299<sub>MT</sub></p>
+                    </div>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="criacoes">
+                    <img src="imagens/jeans-1.jpg" alt="Calças Jeans">
+                    <div class="preco">
+                        <p>349<sub>MT</sub></p>
+                    </div>
+                </a>
+                <!--  -->
+                <a href="javascript:void(0)" class="criacoes">
+                    <img src="imagens/jeans-2.jpg" alt="Calças Jeans">
+                    <div class="preco">
+                        <p>299<sub>MT</sub></p>
+                    </div>
+                </a>
+                
+            </div>
+        </div>
+
+        <!--  -->
+        <div id="formas-de-pagamento"></div>
+        <div class="como-pagar">
+            <div class="seccao-de-informacao">
+                <h4>Formas de Pagamentos</h4>
+            </div>
+
+            <div class="formas-de-pagamento">
+                <!--  -->
+                <div class="formas">
+                    <a href="javascript:void(0)">
+                        <img src="imagens/bim-card.png" alt="Millennium BIM">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="linhavertical"></div>
+                <!--  -->
+                <div class="formas">
+                    <a href="javascript:void(0)">
+                        <img src="imagens/paypal-logo.png" alt="PayPal">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="linhavertical"></div>
+                <!--  -->
+                <div class="formas">
+                    <a href="javascript:void(0)">
+                        <img src="imagens/emola-logo.jpg" alt="Emola">
+                    </a>
+                </div>
+                <!--  -->
+                <div class="linhavertical"></div>
+                <!--  -->
+                <div class="formas">
+                    <a href="javascript:void(0)">
+                        <img src="imagens/mpesa-logo.png" alt="Mpesa">
+                    </a>
+                </div>
+               
+            </div>
+        </div>
+
+        <!--  -->
+        <div id="contacto"></div>
+        <div class="area-do-formulario">
+            <form class="form">
+                <div class="formulario-de-contato">
+                    <!--  -->
+                    <div class="area-de-input">
+                        <label>Nome</label>
+                        <input type="text" required autocomplete="off">
+                    </div>
+                    <!--  -->
+                    <div class="area-de-input">
+                        <label>Email</label>
+                        <input type="Email" required autocomplete="off">
+                    </div>
+                    <!--  -->
+                </div>
+                <div class="area-de-text">
+                    <label>Mensagem</label>
+                    <textarea required></textarea>
+                </div>
+
+                <div class="area-de-btn-enviar">
+                    <button type="submit">Enviar</button>
+                </div>
+            </form>
+        </div>
+
+        
+    </main>
+
+    
+    <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
+    <script src="javascript.js"></script>
+</body>
+</html>
