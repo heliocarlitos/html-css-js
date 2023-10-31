@@ -1,0 +1,291 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofia+Sans+Semi+Condensed:ital,wght@0,1;0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,1;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900;1,1000&display=swap');
+@import url(cssdesnecessario.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+    --sempre-branca: #ffffff;
+    --sempre-preta: #000000;
+    --sempre-azul: #0092ed;
+    --sempre-laranja: #ff7b00;
+
+    --cor-cinza-a: #d3d3d3;
+    --cor-azul-a: #b2dffa;
+    --cor-de-aviso-negativo: #ff0000;
+
+    --fundo-do-site: #ecebeb;
+    --fundo-do-header: #fff;
+    --fundo-dark: #252525;
+    --fundo-btn-a: #0092ed;
+    --fundo-btn-b: #014d7d;
+    --fundo-sec-cookie: #000000aa;
+    --fundo-cookie: #ffffff;
+    --fundo-do-submenu: #e1e1e1;
+
+    --texto-ligth-dark: #000000;
+    --texto-ligth-dark-a: #202020;
+    --texto-quase-branco: #cacaca;
+
+    --btn-desativado: #505050;
+}
+[data-theme="dark"]:root{
+    --sempre-branca: #ffffff;
+    --sempre-preta: #000000;
+    --sempre-azul: #0092ed;
+    --sempre-laranja: #ff7b00;
+
+    --cor-cinza-a: ;
+    --cor-azul-a: ;
+    --cor-de-aviso-negativo: ;
+
+    --fundo-do-site: #000;
+    --fundo-do-header: #141414;
+    --fundo-dark: ;
+    --fundo-btn-a: ;
+    --fundo-btn-b: ;
+    --fundo-sec-cookie:;
+    --fundo-cookie: ;
+    --fundo-do-submenu: #333333;
+
+
+    --texto-ligth-dark: #fff;
+    --texto-ligth-dark-a: ;
+    --texto-quase-branco: ;
+
+    --btn-desativado: ;
+
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    font-family: 'Sofia Sans Semi Condensed', sans-serif;
+    background-color: var(--fundo-do-site);
+}
+
+.header{
+    width: 100%;
+    padding: 20px;
+    background-color: var(--fundo-do-header);
+    position: fixed;
+    z-index: 999999;
+    top: 0;
+    display: flex;
+    text-align: center;
+    justify-content: space-evenly;
+}
+.header .seccao-menu-logo span{
+    display: none;
+    position: absolute;
+    color: var(--texto-ligth-dark);
+    right: 30px;
+    top: 30px;
+    &:hover{
+        cursor: pointer;
+        color: var(--sempre-azul);
+    }
+}
+.header .seccao-de-logo img{
+    width: 100px;
+    transition: .2s;
+}
+.header .seccao-de-navegacao li{
+    list-style: none;
+    display: flex;
+}
+.header .seccao-de-navegacao{
+    display: flex;
+    align-items: center;
+}
+.header .links{
+    display: flex;
+}
+
+.header .links .mostrar_submenu{
+    &:hover .sub-menu{
+        display: block;
+    }
+}
+.header .links .mostrar_submenu span{
+    font-size: 1.1em;
+    margin-top: 2.5px;
+    transition: .2s;
+}
+.header .links .mostrar_submenu:hover span{
+    transform: rotate(-180deg);
+}
+.header .links a{
+    text-decoration: none;
+    font-size: 1.1em;
+    padding: 0 15px;
+    color: var(--texto-ligth-dark);
+    transform: .2s;
+
+    &:hover{
+        opacity: 75%;
+    }
+}
+
+.header .links .material-symbols-outlined{
+    position: absolute;
+    transition: .2s;
+}
+.header .links .sub-menu{
+    display: none;
+    position: absolute;
+    margin-top: 20px;
+    background-color: var(--fundo-do-header);
+    padding: 10px 0;
+    transition: .2s;
+    animation: subindo .5s;
+}
+.header .links .sub-menu a{
+    padding: 4px 10px;
+}
+
+
+.header .seccao-de-btns-1{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .seccao-de-btns-1 .btn-singin-singup{
+    padding-right: 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.header .seccao-de-btns-1 .btn-singin-singup a,
+.header .login-mob a{
+    text-decoration: none;
+    transition: .2s;
+    color: var(--sempre-azul);
+    font-weight: 600;
+
+    &:hover{
+        opacity: 75%;
+    }
+}
+.header .seccao-de-btns-1 .btn-singin-singup .btn-sing{
+    background-color: var(--sempre-azul);
+    color: var(--sempre-branca);
+    border-radius: 50px;
+    padding: 7px 10px;
+    margin-left: 30px;
+}
+.header .login-mob .btn-sing-2{
+    background-color: var(--sempre-azul);
+    color: var(--sempre-branca);
+    border-radius: 50px;
+    padding: 7px 10px;
+    left: 10px;
+    position: absolute;
+}
+.login-mob{
+    display: none;
+}
+.header .seccao-de-btn-de-tema .ico-theme-1{
+    display: block;
+    color: var(--texto-ligth-dark);
+    cursor: pointer;
+} 
+.header .seccao-de-btn-de-tema .ico-theme-2{
+    display: none;
+} 
+
+
+@keyframes subindo {
+    0%{ 
+        margin-top: 70px;
+        opacity: 0;
+    }
+}
+
+
+
+@media screen and (max-width: 760px){
+    .header{
+        justify-content: space-between;
+    }
+    
+    .header .seccao-menu-logo span{
+        display: block;
+    }
+    .header .seccao-de-navegacao {
+        overflow: hidden;
+        z-index: -129999999;
+        display: none;
+        width: 100%;
+        height: 100vh;
+        position: fixed;
+        box-shadow: -7px 10px 10px #00000035;
+        background-color: var(--fundo-do-header);        
+        right: 0;
+        margin-top: 60px;
+        width: 200px;
+        padding-bottom: 20px;
+        animation: para_esquerda .5s;
+    }
+    .header .seccao-de-navegacao .links li{
+        list-style: none;
+    }
+    .header .seccao-de-navegacao .links li a{
+        text-decoration: none;
+        margin: 5px 0;
+    }
+    .header .links{
+        display: flex;
+        flex-direction: column;
+        width: 800px;
+    }
+    .header .seccao-de-navegacao .links .sub-menu{
+        display: none;
+        transition: .2s;
+        padding: 5px 0 13px;
+        position: relative;
+        animation: none;
+        margin-top: 30px;
+        text-align: left;
+        background-color: var(--fundo-do-submenu);
+        left: -70px;
+    }
+    .header .links .mostrar_submenu{
+        &:hover .sub-menu{
+            display: block;
+        }
+    }
+    .header .seccao-menu-aberto{
+        display: none;
+    }
+    .header .seccao-de-btn-de-tema .ico-theme-2{
+        display: block;
+    } 
+    .conteudo:active ~ .seccao-de-navegacao{
+        display: none;
+    }
+    @keyframes para_esquerda {
+        0%{
+            right: -170px;
+        }
+    }
+}
+
+@media screen and (max-width: 450px){
+    .header .login-mob{
+        display: block;
+    }
+    .header .seccao-de-btns-1 .btn-singin-singup{
+        display: none;
+    }
+}
+@media screen and (max-width: 184px){
+    .header .seccao-de-logo img{
+        width: 50px;
+    }   
+    .header .seccao-menu-logo span{
+    top: 20px;
+    }
+}

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon" />
+    <!-- ICONS DO GOOGLE ICON -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <title> HCA | MENU DROPDOW </title>
+    <link rel="stylesheet" href="estilo.css" />
+</head>
+
+<body>
+
+    <header class="header" id="header">
+
+        <div class="seccao-de-logo" id="seccao-de-logo"></div>
+
+        <div class="seccao-de-navegacao" id="seccao-de-navegacao">
+
+            <nav class="links">
+                <li><a href="#inicio"> Início </a></li>
+                <li class="mostrar_submenu"><a href="javascript:void(0)"> Serviços <span class="material-symbols-outlined">keyboard_arrow_down</span> </a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="javascript:void(0)"> Serviço 1 </a></li>
+                        <li><a href="javascript:void(0)"> Serviço 2 </a></li>
+                        <li><a href="javascript:void(0)"> Serviço 3 </a></li>
+                        <li><a href="javascript:void(0)"> Serviço 4 </a></li>
+                    </ul>
+
+                </li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+                <li class="mostrar_submenu">
+                    <a href="javascript:void(0)">Páginas <span class="material-symbols-outlined">keyboard_arrow_down</span> </a>
+
+                    <ul class="sub-menu" id="sub-menu">
+                        <li><a href="javascript:void(0)">Política de Privacidade</a></li>
+                        <li><a href="javascript:void(0)">Termos e Condições</a></li>
+                        <li><a href="javascript:void(0)">Erro 404</a></li>
+                        <li><a href="javascript:void(0)">Site em Manutenção</a></li>
+                    </ul>
+                </li>
+
+                <div class="login-mob">
+                    <li><a href="#singin"> Sing in </a></li>
+                    <li><a class="btn-sing-2" href="javascript:void(0)"> Sing uping </a></li>
+                </div>
+            </nav>
+
+        </div>
+
+        <div class="seccao-de-btns-1">
+
+            <div class="btn-singin-singup">
+                <a href="#singin">Sing in</a>
+                <a class="btn-sing" href="javascript:void(0)">Sing up</a>
+            </div>
+
+            <div class="seccao-de-btn-de-tema">
+                <span class="theme-mod ico-theme-1" id="theme-mod" onclick="changeMod()"></span>
+            </div>
+
+        </div>
+
+        <div class="seccao-menu-logo" id="seccao-menu-logo" onclick="mostrar_ocultar_menu()">
+            <span class="material-symbols-outlined">menu</span>
+        </div>
+
+        <div class="seccao-menu-logo seccao-menu-aberto" id="seccao-menu-aberto" onclick="mostrar_ocultar()">
+            <span class="material-symbols-outlined">menu_open</span>
+        </div>
+
+    </header>
+
+    <main class="conteudo">
+
+        <div class="bc a" id="inicio">INÍCIO</div>
+        <div class="bc b" id="sobre">SOBRE</div>
+        <div class="bc c" id="contacto">CONTACTO</div>
+        <div class="bc d" id="singin">SING IN</div>
+
+    </main>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
