@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pm">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title> HCA | FACEBOOK </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <main>
+
+        <div class="facebook">
+
+            <div class="post">
+
+                <div class="user-info" onclick="mostrar_notificacao()">
+
+                    <div class="user-pic" onclick="mostrar_notificacao()">
+                        <img src="imagens/foto de perfil.png" alt="Foto de Perfil">
+                    </div>
+
+                    <div class="user-name">
+                       
+                        <div class="nome">
+                            <p> <span onclick="mostrar_notificacao()" class="hover">Hélio Carlitos António</span> <span class="txt-cinza">está em</span> <span class="hover" onclick="mostrar_notificacao()">Mocuba</span>.</p>
+                            <p class="txt-cinza txt-pequeno">3 d - Público - <img src="svg/globo-logo.svg" alt="Globo Ícon"> </p>
+                        </div>
+
+                        <div class="opcoes">
+                            <p> <img class="menu" src="svg/menu-de-pontinhos-logo.svg" alt="Menu"></p>
+                            <p > <img class="x" src="svg/x-logo.svg" alt="X"></p>
+                        </div>
+                    </div>
+
+                </div>
+
+                <div class="texto-da-postagem" >
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Necessitatibus asperiores repellendus rerum neque ullam! Harum soluta incidunt optio omnis vitae... <span onclick="mostrar_notificacao()" class="txt-cinza">Ver mais</span></p>
+                </div>
+
+                <div class="imagem-do-post" onclick="mostrar_notificacao()">
+                    <img src="imagens/foto-de-pessoas-felizes.jpg" alt="Foto de Pessoas Felizes">
+                </div>
+
+                <div class="numero-de-curtidas" onclick="mostrar_notificacao()">
+
+                    <div class="icon-de-curtidas">
+                        <img class="icons" src="emojis/gosto.png" alt="Like">
+                        <img class="icons coracao" src="emojis/coracao.png" alt="Coração">
+                        <p class="txt-cinza">Inês Geraldo, Cláudia Carlitos e 345 outras pessoas</p>
+
+                    </div>
+
+                    <div class="numero-de-comentarios">
+                        <p class="txt-cinza">96 comentários</p>
+                    </div>
+                </div>
+
+                <div class="reaccoes">
+
+                    <div class="like dv-in">
+                        <p id="reacao" onclick="mostrar_emijis()"><img class="interaccao-logo" src="svg/like-logo.svg" alt="Like"> <p onclick="mostrar_emijis()">Gosto</p></p>
+                    
+                        <div class="emojis" id="emojis">
+                            <img onclick="eu_amei(), fechar_emijis()" class="emoji coracao" src="emojis/coracao.png" alt="Coração">
+                            <img onclick="eu_gostei(), fechar_emijis()" class="emoji gosto" src="emojis/gosto.png" alt="Like">
+                            <img onclick="eu_ri(), fechar_emijis()" class="emoji rindo" src="emojis/rindo.png" alt="Rindo">
+                            <img onclick="eu_fiquei_surpreso(), fechar_emijis()" class="emoji surpreso" src="emojis/surpreso.png" alt="Surpreso">
+                            <img onclick="eu_fiquei_triste(), fechar_emijis()" class="emoji triste" src="emojis/triste.png" alt="Triste">
+                            <img onclick="eu_fiquei_nervoso(), fechar_emijis()" class="emoji nervoso" src="emojis/nervoso.png" alt="Nervoso">
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="comentarios dv-in" onclick="mostrar_notificacao()">
+                        <p> <img class="interaccao-logo" src="svg/comentarios-logo.svg" alt="Comentários"> <p>Comentar</p></p>                    
+                    </div>
+
+                    <div class="partilha dv-in" onclick="mostrar_notificacao()">
+                        <p> <img class="interaccao-logo" src="svg/partilhar-logo.svg" alt="Partilhar"> <p>Partilhar</p></p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="notificacao" id="notificacao" >
+                <div class="notific">
+                    
+                    <div class="btn" onclick="fechar_notificacao()">
+                        <img src="svg/x-logo.svg" alt="X">
+                    </div>
+
+                    <div class="tt">
+                        <h4>Erro!</h4>
+                    </div>
+
+                    <div class="txt">
+                        <p>Isso é apenas uma simulação, nem todas funcionalidades estão disponíveis.</p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
