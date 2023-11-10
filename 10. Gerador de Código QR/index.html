@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagens/favicon.png" type="image/x-icon">
+    <title>HCA | GERADOR DE CÓDIGO QR</title>
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Incluindo a biblioteca qrcode-generator via CDN -->
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+
+</head>
+
+<body>
+
+    <main>
+
+        <div class="qrcode-container" id="qrcode-container">
+
+            <h4>Gerador de Códigos QR</h4>
+
+            <input type="text" class="text-input" id="text-input" placeholder="Digita seu texto ou seu Link">
+
+            <div>
+                <button id="gerar" class='button' onclick="gerarQRCode()">Gerar QR Code</button>
+
+                <button id="copiarBtn"  class='button' onclick="copiarQRCode()"> Copiar Link</button>
+                    
+                </a download="codigo_qr.png"><button id="downloadLink" class='button' onclick="downloadQRCode()"> Baixar Imagem</button></a>
+
+                <button id="limparBtn" class='button' onclick="limparQRCode()">Limpar</button>
+            </div>
+
+            <div class="qrcode" id="qrcode"></div>
+
+            <div class="notificacao">
+                <p id="campo_vazio"> Campo Vazio</p>
+                <p id="link_copiado">Link Copiado</p>
+                <p id="baixando">Baixando...</p>
+                <p id="campo_limpo">Conteúdo Foi Limpo</p>
+            </div>
+        </div>
+
+    </main>
+
+
+    <footer class="rodape">
+        <div class="info">
+            <p>Todos direitos reservados 2023  | </p>
+            <p>Criado por <strong>Hélio Carlitos </strong> |  </p>
+            <p> Disponível no <a href="https://github.com/heliocarlitos" target="_blank">GitHub</a></p>
+        </div>
+    </footer>
+
+    <script src="javascript.js"></script>
+</body>
+
+</html>
