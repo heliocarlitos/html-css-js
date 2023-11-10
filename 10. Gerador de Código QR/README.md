@@ -1,4 +1,4 @@
-**[Visualizar](https://github.com/hcadeveloper/gerador-de-codigo-qr/)**
+**[Visualizar](https://hcadeveloper.github.io/gerador-de-codigo-qr/)**
 # Licença MIT
 
 Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
