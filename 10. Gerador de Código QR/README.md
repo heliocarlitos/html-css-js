@@ -1,4 +1,4 @@
-**[Visualizar](https://hcadeveloper.github.io/simulador-de-reaccoes-do-facebook/)**
+**[Visualizar](https://github.com/hcadeveloper/gerador-de-codigo-qr/)**
 # Licença MIT
 
 Este repositório contém projectos desenvolvidos com tecnologias como HTML, CSS, JavaScript e PHP. Neste repositório eu expresso meus conhecimentos nestas tecnologias. Esperamos que esses projectos sejam úteis para você.
