@@ -1,0 +1,522 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --cor-branca: #fff;
+    --cor-preta: #000;
+    --cor-azul: #0084ff;
+
+    --cor-cinza: #afafaf;
+    --cor-azul-a: #70b7fb;
+    --cor-azul-b: #1b1f23;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: var(--cor-preta);
+    color: var(--cor-branca);
+}
+.header{
+    background-color: var(--cor-azul-b);
+    padding: 0 24px;
+    height: 62.8px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+.logoSerach{
+    display: flex;
+    align-items: center;
+}
+.logoSerach .logo img{
+    width: 50px;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #afafaf4b;
+    padding: 3px 10px;
+    border-radius: 5px;
+}
+.search label{
+    color: var(--cor-branca);
+    margin-right: 10px;
+    cursor: pointer;
+}
+.search input{
+    color: var(--cor-branca);
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    font-size: 1.1em;
+    max-width: 200px;
+    min-width: 0;
+    width: 100%;
+}
+.main{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+.conteudoDoPerfil {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    width: 90%;
+    padding: 10px 30px;
+}
+
+.userInfo {
+    background-color: var(--cor-azul-b);
+    width: 60%;
+    min-width: 230px;
+    max-width: 630px;
+    border: 1.6px solid var(--cor-azul-b);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.tamb img{
+    width: 100%;
+}
+.imgPerfil {
+    width: 100%;
+    max-width: 120px;
+    min-width: 80px;
+    border: 3px solid var(--cor-azul-b);
+    position: relative;
+    border-radius: 100%;
+    margin-top: -15%;
+    margin-left: 5%;
+}
+.imgPerfil img{
+    width: 100%;
+    max-width: 120px;
+    min-width: 80px;
+    border-radius: 100%;
+}
+.usernameTituloTagsUniLocalSeguigoresBtn {
+    margin: 2%;
+}
+.titulo, .tags, .universidade,
+.local, .seguidores, .btn{
+    margin-bottom: 10px;
+}
+/* .editta {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    text-align: center;
+    cursor: pointer;
+    margin-left: -20px;
+}
+.editta span {
+    color: var(--cor-azul-a);
+    border-radius: 50px;
+    margin-top: -100px;
+    margin-left: -20px;
+    font-size: 1.4em;
+    z-index: 1;
+
+    display: none;
+}
+.editta span::before{
+    content: '';
+    height: 30px;
+    width: 30px;
+    background-color: var(--cor-branca);
+    position: fixed;
+    border-radius: 100%;
+    z-index: -1;
+    margin-left: -4px;
+    margin-top: -3px;
+} */
+.edittb {
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 5px;
+    margin-top: -40px;
+}
+.edittb span {
+    border-radius: 50px;
+    padding: 5px;
+    cursor: pointer;
+
+    &:hover{
+        background-color:  #ffffff2e;
+    }
+}
+.username a{
+   text-decoration: none;
+   color: var(--cor-branca);
+   width: 100%;
+   font-size: 1.5em;
+   font-weight: 600;
+   padding: 2px 0;
+   border-radius: 5px;
+
+   &:hover{
+    background-color: #cacaca27 ;
+   }
+}
+.titulo{
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+.tags {
+    font-size: 14px;
+    color: var(--cor-cinza);
+}
+.tags span{
+    text-transform: lowercase;
+}
+.universidade a{
+    font-size: 14px;
+    color: var(--cor-cinza);
+    text-decoration: none;
+
+    &:hover{
+        text-decoration: underline;
+        color: var(--cor-azul-a);
+    }
+}
+.local{
+    font-size: 14px;
+    color: var(--cor-cinza);
+}
+.local a{
+    color: var(--cor-azul-a);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.seguidores{
+    font-size: 14px;
+    display: flex;
+    gap: 10px;
+}
+.seguidores a{
+    color: var(--cor-azul-a);
+    text-decoration: none;
+    font-weight: 600;
+
+    &:hover{
+        text-decoration: underline;
+    }
+}
+.btn{
+    width: 100%;
+    max-width: 450px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10;
+    justify-content: space-between;
+
+}
+.btn button{
+    cursor: pointer;
+    margin-bottom: 5px;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn .a, .b{
+    background-color: var(--cor-azul-a);
+    padding: 10px;
+    border-radius: 30px;
+    font-size: .9em;
+    letter-spacing: .5px;
+    outline: 0;
+    font-weight: 600;
+    border: 2px solid var(--cor-azul-a);
+}
+.btn .a a{
+    color: #0000009d;
+}
+.btn .b{
+    background-color: transparent;
+
+    &:hover{
+        background-color: #70b8fb2f;
+    }
+}
+.btn .b a{
+    color: var(--cor-azul-a);
+}
+.btn .c{
+    justify-content: center;
+    width: 30px;
+    height: 30px;
+    display: none;
+    font-weight: 900;
+    letter-spacing: 2px;
+    border-radius: 50px;
+    border: 2px solid transparent;
+    background-color: transparent;
+
+    &:hover{
+        background-color: #ffffff2e;
+    }
+}
+.btn .c a{
+    color: var(--cor-branca);
+}
+
+.btn .mais{
+    display: flex;
+}
+
+
+
+
+
+
+
+.lingur{
+    background-color: var(--cor-azul-b);
+    padding: 20px;
+    border-radius: 10px;
+    height: 200px;
+    max-width: 275px;
+    min-width: 195px;
+    width: 100%;
+}
+.lingur .titulo{
+    font-size: 1.1em;
+}
+.lingur .lingua{
+    color: var(--cor-cinza);
+    display: flex;
+}
+.lingur .lingua a{
+    text-decoration: none;
+    color: var(--cor-cinza);
+
+    &:hover{
+        color: var(--cor-azul-a);
+        text-decoration: underline;
+    }
+}
+.lingur .edit a {
+    color: var(--cor-branca);
+    margin-left: -30px;
+    text-decoration: none;
+}
+.idiomaUrl{
+    display: flex;
+    justify-content: space-between;
+}
+.lingur .last {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 0.5px solid var(--cor-cinza);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.fundodesfocado{
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    background-color: #000000a6;
+    position: fixed;
+    padding: 20px;
+    top: 0;
+    z-index: 0;
+    display: none;
+}
+.editarintrodocao{
+    background-color: var(--cor-azul-b);
+    width: 100%;
+    max-width: 700px;
+    padding: 20px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.ttIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(cin);
+}
+.close{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+
+    &:hover{
+        background-color: #afafaf;
+
+    }
+}
+.linha{
+    width: 850px;
+    height: 1px;
+    background-color: var(--cor-cinza);
+    margin-left: -20px;
+    margin-top: 5px;
+}
+.info{
+    font-size: .8em;
+    color: var(--cor-cinza);
+    margin-top: 10px;
+}
+.informacoesbasicas{
+    width: 100%;
+    /* background-color: red; */
+    margin: 30px 0;
+    max-height: 400px;
+    overflow-y:  auto;
+    padding: 0 10px;
+}
+.informacoesbasicas .tt{
+    margin: 0 0 5px 0;
+}
+.informacoesbasicas .inputBox{
+    margin-bottom: 25px;
+}
+.informacoesbasicas .inputBox label{
+    color: var(--cor-cinza);
+    font-size: 1em;
+}
+.informacoesbasicas .inputBox input{
+    width: 100%;
+    height: 32px;
+    background-color: transparent;
+    border: 1px solid var(--cor-branca);
+    outline: 0;
+    border-radius: 5px;
+    margin-top: 4px;
+    padding: 0 10px;
+    color: var(--cor-branca);
+    font-size: 1em;
+}
+.btnsalvar{
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin-top: 13px;
+}
+.btnsalvar button {
+    cursor: pointer;
+    height: 33px;
+    width: 72px;
+    border: 0;
+    outline: 0;
+    background-color: var(--cor-azul-a);
+    border-radius: 40px;
+    font-weight: 600;
+    color: #0000009d;
+    transition: .2s;
+
+    &:hover{
+        background-color: #cbe6ff;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 950px){
+    .btn .c{
+        display: flex;
+        border: 2px solid var(--cor-branca);
+
+    }
+    .btn .mais{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .conteudoDoPerfil {
+        gap: 20px;
+        width: 97%;
+        padding: 10px;
+    }
+    .edittb {
+        margin-top: -40px;
+    }
+    .userInfo {
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+@media screen and (max-width: 450px){
+    .search label{
+        margin-right: 0;
+        margin-top: 5px;
+    }
+    .search input{
+        display: none;
+        width: 80%;
+    }
+    .edittb {
+        margin-top: -70px;
+    }
+    .username{
+        margin-top: 30px;
+    }
+    .username a{
+        font-size: 1.3em;
+     }
+     .titulo{
+         font-size: 14px;
+     }
+     .tags {
+         font-size: 14px;
+     }
+     .universidade a{
+         font-size: 14px;
+     }
+     .local{
+         font-size: 14px;
+     }
+     .seguidores{
+         font-size: 14px;
+     }
+
+     .btn .a, .b{
+         font-size: .9em;
+     }
+     .btn .c{
+     }
+     .lingur .titulo{
+        font-size: 1em;
+    }
+}

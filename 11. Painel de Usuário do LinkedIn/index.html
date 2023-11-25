@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/svg+xml" href="https://static.licdn.com/aero-v1/sc/h/akt4ae504epesldzj74dzred8" id="favicon-svg">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
+    <link rel="stylesheet" href="style.css">
+    <title> UserName | LinkedIn </title>
+</head>
+<body>
+    
+    <header class="header">
+        <div class="conteudoDoHeader">
+            <div class="logoSerach">
+                <a href="javascript:void(0)" class="logo">
+                    <img src="imagens/icon-linkedin-branco.png" alt="">
+                </a>
+                <div class="search">
+                    <label for="pesquisar" onclick="mtip()"><span class="material-symbols-outlined"> search  </span></label>
+                    <input type="search" id="pesquisar" name="pesquisar" placeholder="Pesquisar" list="opcoes">
+                    <datalist class="opcoes" id="opcoes">
+                        <option value="css"></option>
+                        <option value="html"></option>
+                        <option value="javascript"></option>
+                        <option value="mysql"></option>
+                        <option value="python"></option>
+                        <option value="java"></option>
+                    </datalist>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="main">
+
+        <div class="conteudoDoPerfil">
+
+            <div class="conteudos userInfo">
+                <div class="tambEditImg">
+                    <div class="tamb">
+                        <img id="tambImg" src="imagens/tamb.jpg" alt="">
+                    </div>
+
+                    <div class="imgPerfil">
+                        <img id="imgPerfil" src="imagens/foto-de-perfil.png" alt="">
+                    </div>
+                </div>
+
+                <div class="usernameTituloTagsUniLocalSeguigoresBtn">
+                    <div class="edittb">
+                        <span onclick="mostarEdInfo()" class="material-symbols-outlined"> edit </span>
+                    </div>
+                    
+                    <div class="username" >
+                        <a href="javascript:void(0)"><span id="nome">Hélio </span><span id="sobrenome">Carlitos</span></a>
+                    </div>
+                    <div class="titulo">
+                        <p id="titulo">💻HTML • CSS • JAVASCRIPT • PYTHON • PHP • SQL 🤓COSMOLOGIA • TECNOLOGIA • EDUCAÇÃO</p>
+                    </div>
+                    <div class="tags">
+                        <p>Fala sobre <span id="tags">#css, #html, #mysql, #python e #javascript</span></p>
+                    </div>
+                    <div class="universidade">
+                        <a href="javascript:void(0)" id="universidade" >Universidade Rovuma</a>
+                    </div>
+                    <div class="local">
+                        <p id="local"><span id="distrito">Mocuba</span>, <span id="provincia">Zambézia</span>, <span id="pais">Moçambique </span><a href="javascript:void(0)">Informações de contato</a></p>
+                    </div>
+                    <div class="seguidores">
+                        <p><a href="javascript:void(0)">599 seguidores</a></p>
+                        <p><a href="javascript:void(0)">564 conexões</a></p>
+                    </div>
+                    <div class="btn">
+                        <button class="a"><a href="javascript:void(0)">Tenho interesse em...</a></button>
+                        <button class="b"><a href="javascript:void(0)">Adicionar seção do perfil</a></button>
+                        <button class="c mais"><a href="javascript:void(0)">Mais</a></button>
+                        <button class="c "><a href="javascript:void(0)">...</a></button>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <div class="conteudos lingur">
+
+                <div class="idiomaUrl">
+                    <div class="idioma">
+                        <div class="titulo">
+                            <h4>Idioma do Perfil</h4>
+                        </div>
+                        <div class="lingua">
+                            <p>Português</p>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <a href="javascript:void(0)"><span class="material-symbols-outlined"> edit </span></a>
+                    </div>
+                </div>
+
+                <div class="idiomaUrl last">
+                    <div class="idioma">
+                        <div class="titulo">
+                            <h4>Public profile & URL</h4>
+                        </div>
+                        <div class="lingua">
+                            <p><a href="javascript:void(0)">www.linkedin.com/in/heliocarlitos</a></p>
+                        </div>
+                    </div>
+                    <div class="edit">
+                        <a href="javascript:void(0)"><span class="material-symbols-outlined"> edit </span></a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        
+
+        <div class="fundodesfocado" id="fundodesfocado">
+            <div class="editarintrodocao">
+
+                <div class="ttIcon">
+                    <div class="tt">
+                        <h3>Editar introdução</h3>
+                    </div>
+                    <div class="close" onclick="ocultarEdInfo()">
+                        <span class="material-symbols-outlined"> close </span>
+                    </div>
+                </div>
+    
+                <div class="linha"></div>
+    
+                <div class="info">
+                    <p>* Indica item obrigatório</p>
+                </div>
+    
+                <div class="informacoesbasicas">
+                    <div class="tt">
+                        <h2>Informações básicas</h2>
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="tambImgDigitado">URL da Imagem de Capa</label>
+                        <input type="text" id="tambImgDigitado" value="imagens/tamb.jpg" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="imgPerfilDigitado">URL da Imagem de Perfil</label>
+                        <input type="text" id="imgPerfilDigitado" value="imagens/foto-de-perfil.png" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="nomeDigitado">Nome*</label>
+                        <input type="text" id="nomeDigitado" value="Hélio" required autocomplete="off">
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="sobrenomeDigitado">Sobrenome*</label>
+                        <input type="text" id="sobrenomeDigitado" value="Carlitos" required autocomplete="off">
+                    </div>
+    
+                    <div class="inputBox">
+                        <label for="tituloDigitado">Título</label>
+                        <input type="text" id="tituloDigitado" value="💻HTML • CSS • JAVASCRIPT • PYTHON • PHP • SQL 🤓COSMOLOGIA • TECNOLOGIA • EDUCAÇÃO" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="tagsDigitado">Tags</label>
+                        <input type="text" id="tagsDigitado" value="#css, #html, #mysql, #python e #javascript" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="universidadeDigitado">Universidade</label>
+                        <input type="text" id="universidadeDigitado" value="Universidade Rovuma" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="distritoDigitado">Distrito/Cidade</label>
+                        <input type="text" id="distritoDigitado" value="Mocuba" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="provinciaDigitado">Província/Estado</label>
+                        <input type="text" id="provinciaDigitado" value="Zambézia" required autocomplete="off">
+                    </div>
+
+                    <div class="inputBox">
+                        <label for="paisDigitado">País</label>
+                        <input type="text" id="paisDigitado" value="Moçambique" required autocomplete="off">
+                    </div>
+    
+                </div>
+
+                <div class="linha"></div>
+                <div class="btnsalvar">
+                    <button type="submit" onclick="actualizarDados()">Salvar</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script src="javascript.js"></script>
+</body>
+</html>
