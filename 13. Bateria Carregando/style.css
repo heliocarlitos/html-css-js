@@ -1,0 +1,85 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: black;
+}
+.SeccaoDeBateria {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+.pino {
+    height: 15px;
+    width: 35px;
+    border: 1px solid #fff;
+    border-radius: 5px 5px 0 0;
+}
+.Bateria {
+    width: 125px;
+    height: 220px;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    margin-top: 3px;
+    position: relative;
+    overflow: hidden;
+}
+.Bateria::after {
+    content: '';
+    width: 124px;
+    background-color: #15ff00;
+    height: 222px;
+    z-index: -1;
+    position: absolute;
+    border-radius: 10px;
+    animation: carregando 2s linear infinite;
+    bottom: 0;
+}
+.cabo {
+    height: 20px;
+    width: 23px;
+    border: 1px solid #fff;
+    border-radius: 5px 5px 0 0;
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+.cabo span {
+    height: 5px;
+    width: 1px;
+    background-color: #fff;
+    margin-top: 2px;
+}
+.caboG {
+    width: 33px;
+    height: 30px;
+    display: flex;
+    margin-top: -1px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+    border: 1px solid #fff;
+}
+.caboG span {
+    display: block;
+    transform: rotate(33deg);
+    font-size: .8em;
+}
+.fio {
+    width: 9px;
+    height: 100px;
+    border-left: 1px solid #fff;
+    border-right: 1px solid #fff;
+    margin-top: 2px;
+}
+@keyframes carregando {
+    0% {
+        height: 0;
+        background-color: #ff0000;
+        /* border-radius: 0 0 10px 10px; */
+    }
+}
