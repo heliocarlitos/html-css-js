@@ -1,0 +1,328 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    --cor-branca: #fff;
+    --cor-branca-a: #e1e1e1;
+    --cor-branca-b: #b5b5b5;
+    --cor-branca-c: #8f8f8f;
+
+    --cor-preta: #000;
+    --cor-preta-a: #1e1e1e;
+    --cor-preta-b: #363636;
+    --cor-preta-c: #454545;
+    --fundo-do-site: #cccccc;
+
+    --cor-azul: #0092ed;
+    --cor-azul-a: #0073ba;
+    --cor-azul-claro: #0092ed70;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.Cabecalho {
+    width: 228px;
+    background-color: var(--cor-preta-a);
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: block;
+    animation: mostrando .2s ease-in-out;    
+    /* overflow-y: auto; */
+}
+.LogoMenu {
+    display: flex;
+    justify-content: space-between;
+}
+.LogoMenu img{
+    width: 40px;
+}
+.LogoMenu span {
+    position: absolute;
+    background-color: var(--cor-branca-a);
+    margin-left: 5px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 5px;
+    color: var(--cor-preta-b);
+    cursor: pointer;
+    box-shadow: 0 0 2px 1px #00000027;
+
+    &:hover {
+        background-color: var(--cor-branca-b);
+    }
+}
+.PontoVemelho::after {
+    width: 7px;
+    height: 7px;
+    background-color: red;
+    position: absolute;
+    content: '';
+    border-radius: 100px;
+    margin-left: -5px;
+}
+.Contador::before {
+    width: 17px;
+    height: 17px;
+    background-color: var(--cor-branca-b);
+    position: absolute;
+    content: '9+';
+    font-size: .8em;
+    color: var(--cor-preta);
+    border-radius: 5px;
+    font-weight: 600;
+    margin-left: 160px;
+    margin-top: -3px;
+    padding: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.SeccaoDePesquisa {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+    background-color: var(--cor-branca-c);
+    overflow: hidden;
+    border-radius: 5px;
+    width: 100%;
+    max-width: 180px;
+}
+.SeccaoDePesquisa button {
+    display: flex;
+    align-items: center;
+    font-weight: bold;
+    background-color: transparent;
+    border: 0;
+    padding: 5px;
+    outline: 0;
+    cursor: pointer;
+    font-size: 1.1em;
+
+    &:hover{
+        background-color: var(--cor-branca-b);
+    }
+}
+.SeccaoDePesquisa #LupaSearch{
+    color: var(--cor-branca);
+    border-radius: 5px;
+ }
+.SeccaoDePesquisa input{
+    background-color: transparent;
+    border: 0;
+    outline: 0;
+    height: 26px;
+    letter-spacing: .5px;
+    color: var(--cor-branca);
+    padding: 0 3px;
+}
+.SeparadorTitular {
+    margin: 20px 0 10px 0;
+    color: var(--cor-branca-c);
+    cursor: default;
+    font-size: .8em;
+}
+.MenuCheio {
+    font-size: .9em;
+}
+.MenuCheio ul {
+    list-style: none;
+    overflow-y: auto;
+    overflow-x: hidden;
+}
+.LinhaDoMenu {
+    width: 300px;
+    height: .5px;
+    background-color: var(--cor-branca-c);
+    margin: 20px 0;
+}
+.SeccaoDeUsoDePlano {
+    border-radius: 6px;
+    background-color: var(--cor-azul-claro);
+    color: var(--cor-branca);
+}
+.SeccaoDeUsoDePlano .UsoDePlanoClose{
+    display: flex;
+    justify-content: end;
+    padding: 10px 10px 0 0;
+    cursor: pointer;
+}
+.SeccaoDeUsoDePlano .UsoDePlanoClose span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 3px;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: var(--cor-azul-a);
+        
+    }
+}
+.SeccaoDeUsoDePlano .UsoDePlano {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 170px;
+    margin-top: -20px;
+    padding: 10px;
+}
+.SeccaoDeUsoDePlano .UsoDePlano .Percentagem {
+    border-top: 7px solid var(--cor-branca-c);
+    border-right: 7px solid var(--cor-branca);
+    border-bottom: 7px solid var(--cor-branca);
+    border-left: 7px solid var(--cor-branca);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 100px;
+    margin-bottom: 10px;
+}
+.SeccaoDeUsoDePlano .UsoDePlano .DescricaoDeUso p{
+    color: var(--cor-branca-b);
+    margin: 5px 0;
+}
+.SeccaoDeUsoDePlano .UsoDePlano .DescricaoDeUso a{
+    color: var(--cor-branca);
+    text-decoration: none;
+    background-color: var(--cor-azul);
+    width: 100%;
+    display: block;
+    padding: 5px;
+    text-align: center;
+    border-radius: 3px;
+
+    &:hover{
+        background-color: var(--cor-azul-a);
+    }
+}
+li .UsoDePlanoMobile {
+    margin: 20px 0 10px 0;
+    border-top: 3px solid var(--cor-branca-c);
+    border-right: 3px solid var(--cor-branca);
+    border-bottom: 3px solid var(--cor-branca);
+    border-left: 3px solid var(--cor-branca);
+    width: 30px;
+    height: 28px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    border-radius: 100px !important;
+    font-size: .6em;
+    color: var(--cor-branca) !important;
+}
+
+.MenuCheio ul li a{
+    display: flex;
+    align-items: center;
+    gap: 13px;
+    text-decoration: none;
+    width: 100%;
+    padding: 5px 3px 3px 5px;
+    margin: 5px 0;
+    letter-spacing: .4px;
+    border-radius: 4px;
+    transition: .2s;
+    color: var(--cor-branca-b);
+
+    &:hover {
+        background-color: var(--cor-preta-b);
+        color: var(--cor-branca);
+
+    }
+}
+.CabecalhoMobile {
+    width: 75px;
+    background-color: var(--cor-preta-a);
+    border-radius: 0 10px 10px 0;
+    padding: 20px;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    position: fixed;
+    display: none;
+    animation: fechando .2s ease-in-out;
+    box-shadow: 0 0 10px 0 #00000049;
+}
+.CabecalhoMobile .SeccaoDePesquisa {
+    background-color: transparent;
+}
+.CabecalhoMobile .MenuCheio ul li a {
+    width: 27px;
+}
+
+
+.SeccaoDeUsuario {
+    margin-top: 8px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    gap: 10px;
+}
+.SeccaoDeUsuario .FotoUser img{
+    width: 35px;
+    height: 35px;
+    border-radius: 100px;
+    border: 2px solid var(--cor-azul);
+    cursor: pointer;
+}
+.SeccaoDeUsuario .DescricaoUser {
+    color: var(--cor-branca);
+    cursor: pointer;
+    font-size: .9em;
+}
+.SeccaoDeUsuario .DescricaoUser p {
+    display: flex;
+    align-items: center;
+    color: var(--cor-branca-a);
+    font-size: .8em;
+    margin-top: 5px;
+}
+.SeccaoDeUsuario .LogOut span{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    border-radius: 3px;
+    color: var(--cor-branca);
+    cursor: pointer;
+    transition: .2s;
+    padding: 3px 6px 3px 3px;
+    &:hover{
+        background-color: var(--cor-branca-b);
+        color: var(--cor-preta);
+    }
+}
+
+@keyframes mostrando {
+    0%{
+        width: 75px;
+    }
+    100%{
+        width: 228px;
+        margin-left: 0px;
+    }
+}
+
+@keyframes fechando {
+    0%{
+        width: 228px;
+    }
+    100%{
+        margin-left: 0px;
+        width: 75px;
+    }
+}
